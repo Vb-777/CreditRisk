@@ -1,0 +1,17 @@
+[project]
+name = "creditrisk"
+version = "1.0.0"
+description = "WoE scorecard, gradient-boosting challenger and profit-based cut-off strategy on Home Credit Default Risk"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 140
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I"]
+ignore = ["E741"]

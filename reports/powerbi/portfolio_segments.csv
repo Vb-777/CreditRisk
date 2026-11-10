@@ -1,0 +1,17 @@
+segment,applications,defaults,default_rate,view
+Thin file (no bureau record),44020,4457,0.10124943207632894,by_bureau_history
+Has bureau history,263491,20368,0.07730055296006315,by_bureau_history
+Working,158774,15224,0.09588471664126369,by_income_type
+Commercial associate,71617,5360,0.07484256531270508,by_income_type
+State servant,21703,1249,0.05754964751416855,by_income_type
+Pensioner,55362,2982,0.053863660994906255,by_income_type
+Lower secondary,3816,417,0.10927672955974843,by_education
+Secondary / secondary special,218391,19524,0.08939928843221562,by_education
+Incomplete higher,10277,872,0.08484966429891992,by_education
+Higher education,74863,4009,0.05355115344028425,by_education
+Cash loans,278232,23221,0.08345912763449208,by_contract_type
+Revolving loans,29279,1604,0.05478329177909082,by_contract_type
+1: <2x income,71036,5317,0.07484937214933274,by_credit_to_income_band
+2: 2-4x income,116620,10223,0.08766077859715314,by_credit_to_income_band
+3: 4-6x income,63756,5228,0.08200012547838635,by_credit_to_income_band
+4: 6x+ income,56099,4057,0.07231857965382626,by_credit_to_income_band

@@ -1,0 +1,160 @@
+{
+  "data": {
+    "applications": 307511,
+    "default_rate": 0.08072881945686496,
+    "features_engineered": 52,
+    "train": 184506,
+    "validation": 61502,
+    "test": 61503
+  },
+  "models": {
+    "scorecard": {
+      "auc": 0.7476848552196909,
+      "gini": 0.4953697104393817,
+      "ks": 0.36809367792524966,
+      "brier": 0.06856641480544676,
+      "ece": 0.0024335131549858783,
+      "mean_pd": 0.0804590521826601,
+      "observed_default_rate": 0.08072776937710356
+    },
+    "gbm_raw": {
+      "auc": 0.7707076423072157,
+      "gini": 0.5414152846144313,
+      "ks": 0.40153929036739083,
+      "brier": 0.06713603582461108,
+      "ece": 0.004606292458240883,
+      "mean_pd": 0.07980955221586128,
+      "observed_default_rate": 0.08072776937710356
+    },
+    "gbm_calibrated": {
+      "auc": 0.7704044587894384,
+      "gini": 0.5408089175788768,
+      "ks": 0.4000631610063825,
+      "brier": 0.0672127010204974,
+      "ece": 0.0020046010784488077,
+      "mean_pd": 0.08008172276219998,
+      "observed_default_rate": 0.08072776937710356
+    },
+    "train_auc": {
+      "scorecard": 0.7426714731075423,
+      "gbm": 0.8518475638573392
+    },
+    "gbm_vs_scorecard": {
+      "auc_diff": 0.02271960356974756,
+      "ci_low": 0.019049586638335867,
+      "ci_high": 0.02654812278130904,
+      "share_boot_b_better": 1.0,
+      "n_boot": 300
+    }
+  },
+  "scorecard_characteristics": [
+    "EXT_SOURCE_3",
+    "EXT_SOURCE_2",
+    "EXT_SOURCE_1",
+    "employed_years",
+    "bur_n_opened_last_year",
+    "bur_active_share",
+    "OCCUPATION_TYPE",
+    "credit_to_goods",
+    "ORGANIZATION_TYPE",
+    "bur_n_active",
+    "REGION_RATING_CLIENT_W_CITY",
+    "bur_utilisation",
+    "NAME_EDUCATION_TYPE",
+    "phone_change_years",
+    "annuity_to_credit",
+    "id_age_years",
+    "registration_age_years",
+    "NAME_FAMILY_STATUS",
+    "OWN_CAR_AGE"
+  ],
+  "hypothesis_tests": {
+    "thin_file_vs_bureau_history": {
+      "question": "Do thin-file applicants (no bureau record) default more often?",
+      "rate_a": 0.10124943207632894,
+      "rate_b": 0.07730055296006315,
+      "diff": 0.023948879116265795,
+      "z": 17.07366094193066,
+      "p_value": 2.3311279515485783e-65,
+      "ci_low": 0.020952008088670076,
+      "ci_high": 0.026945750143861514,
+      "relative_risk": 1.30981510738531
+    },
+    "cash_vs_revolving": {
+      "question": "Do cash loans default more often than revolving loans?",
+      "rate_a": 0.08345912763449208,
+      "rate_b": 0.05478329177909082,
+      "diff": 0.02867583585540126,
+      "z": 17.13291630212284,
+      "p_value": 8.432004662709859e-66,
+      "ci_low": 0.025873994143765504,
+      "ci_high": 0.03147767756703702,
+      "relative_risk": 1.5234412705799836
+    },
+    "education": {
+      "question": "Is default independent of education level?",
+      "chi2": 1019.2131873088356,
+      "dof": 4,
+      "p_value": 2.4476812052198174e-219,
+      "cramers_v": 0.05757079004597784,
+      "n_segments": 5
+    },
+    "income_type": {
+      "question": "Is default independent of income type?",
+      "chi2": 1253.4708080924986,
+      "dof": 7,
+      "p_value": 1.9281456056861122e-266,
+      "cramers_v": 0.06384498427091885,
+      "n_segments": 8
+    }
+  },
+  "strategy": {
+    "assumptions": {
+      "lgd": 0.6,
+      "net_margin": 0.08
+    },
+    "approve_all": {
+      "approval_rate": 1.0,
+      "score_cutoff": 467.3,
+      "approved": 61503.0,
+      "approved_bads": 4965.0,
+      "exposure_approved": 36888096811.5,
+      "exposure_bad": 2769114514.5,
+      "bad_rate": 0.08072776937710356,
+      "bads_rejected_share": 0.0,
+      "expected_loss": 1661468708.7,
+      "revenue": 2729518583.76,
+      "profit": 1068049875.0600002,
+      "loss_rate": 0.045040781507112916
+    },
+    "scorecard_best": {
+      "approval_rate": 0.8,
+      "score_cutoff": 544.2,
+      "approved": 49202.0,
+      "approved_bads": 2478.0,
+      "exposure_approved": 30921466909.5,
+      "exposure_bad": 1527713518.5,
+      "bad_rate": 0.05036380634933539,
+      "bads_rejected_share": 0.5009063444108761,
+      "expected_loss": 916628111.1,
+      "revenue": 2351500271.28,
+      "profit": 1434872160.1800003,
+      "loss_rate": 0.029643746002825773
+    },
+    "gbm_best": {
+      "approval_rate": 0.8,
+      "score_cutoff": 0.1283249460819554,
+      "approved": 49202.0,
+      "approved_bads": 2307.0,
+      "exposure_approved": 30288412597.5,
+      "exposure_bad": 1374615328.5,
+      "bad_rate": 0.04688833787244421,
+      "bads_rejected_share": 0.5353474320241691,
+      "expected_loss": 824769197.1,
+      "revenue": 2313103781.52,
+      "profit": 1488334584.42,
+      "loss_rate": 0.027230519078707886
+    }
+  },
+  "runtime_seconds": 108.2
+}

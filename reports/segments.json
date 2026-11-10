@@ -1,0 +1,108 @@
+{
+  "by_bureau_history": [
+    {
+      "segment": "Thin file (no bureau record)",
+      "applications": 44020,
+      "defaults": 4457,
+      "default_rate": 0.10124943207632894
+    },
+    {
+      "segment": "Has bureau history",
+      "applications": 263491,
+      "defaults": 20368,
+      "default_rate": 0.07730055296006315
+    }
+  ],
+  "by_income_type": [
+    {
+      "segment": "Working",
+      "applications": 158774,
+      "defaults": 15224,
+      "default_rate": 0.09588471664126369
+    },
+    {
+      "segment": "Commercial associate",
+      "applications": 71617,
+      "defaults": 5360,
+      "default_rate": 0.07484256531270508
+    },
+    {
+      "segment": "State servant",
+      "applications": 21703,
+      "defaults": 1249,
+      "default_rate": 0.05754964751416855
+    },
+    {
+      "segment": "Pensioner",
+      "applications": 55362,
+      "defaults": 2982,
+      "default_rate": 0.053863660994906255
+    }
+  ],
+  "by_education": [
+    {
+      "segment": "Lower secondary",
+      "applications": 3816,
+      "defaults": 417,
+      "default_rate": 0.10927672955974843
+    },
+    {
+      "segment": "Secondary / secondary special",
+      "applications": 218391,
+      "defaults": 19524,
+      "default_rate": 0.08939928843221562
+    },
+    {
+      "segment": "Incomplete higher",
+      "applications": 10277,
+      "defaults": 872,
+      "default_rate": 0.08484966429891992
+    },
+    {
+      "segment": "Higher education",
+      "applications": 74863,
+      "defaults": 4009,
+      "default_rate": 0.05355115344028425
+    }
+  ],
+  "by_contract_type": [
+    {
+      "segment": "Cash loans",
+      "applications": 278232,
+      "defaults": 23221,
+      "default_rate": 0.08345912763449208
+    },
+    {
+      "segment": "Revolving loans",
+      "applications": 29279,
+      "defaults": 1604,
+      "default_rate": 0.05478329177909082
+    }
+  ],
+  "by_credit_to_income_band": [
+    {
+      "segment": "1: <2x income",
+      "applications": 71036,
+      "defaults": 5317,
+      "default_rate": 0.07484937214933274
+    },
+    {
+      "segment": "2: 2-4x income",
+      "applications": 116620,
+      "defaults": 10223,
+      "default_rate": 0.08766077859715314
+    },
+    {
+      "segment": "3: 4-6x income",
+      "applications": 63756,
+      "defaults": 5228,
+      "default_rate": 0.08200012547838635
+    },
+    {
+      "segment": "4: 6x+ income",
+      "applications": 56099,
+      "defaults": 4057,
+      "default_rate": 0.07231857965382626
+    }
+  ]
+}
